@@ -4,294 +4,510 @@
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-
+      
+      <meta name="author" content="Nil David">
+      <meta charset="utf-8">
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"><!--Importante, faz os icons aparecerem no footrer-->
         <link rel="stylesheet" href="css/footerindex.css"><!--CSS do footer-->
         <link rel="stylesheet" href="css/estilobuttonzapinstaface.css">
 
      <style>
-  h3{
-    text-align: center;
-    color: white;
-  } 
-  body{
-    background-color: grey;
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
-  main{
-    flex: 1 0 auto;
+ * {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+.map_montese{
+    width: auto;
+    float: right;
+}
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background: grey;
+color: #000;
+font-size: 15px;
+line-height: 1.5;
+}
 
-  }
-  section{
-    background-color:grey;
-    display: inline-block;
-    min-height: 100vh;
-    flex-direction: column;
-  }
-  #nav{m 
-    background-color:red darken-1;
-    
-  }
-  .page-footer{
-      background-color: firebrick;
-  }
-  .nav-wrapper{
-    background-color:firebrick;
-  }
-  #zap{
-    color:white;
-  }
-  #insta{
-    color:white;
-  }
-  #face{
-    color:white;
-  }
-  #git{
-    color:white;
-  }
-  #mensalidade{
-    text-align:center;
-    margin-left:auto;
-    margin-right:auto;
-    display: flex;
-flex-direction: row;
-justify-content: center;
+a {
+color: #262626;
+text-decoration: none;
+}
+
+ul {
+list-style: none;
+}
+
+.container {
+width: 90%;
+max-width: 1100px;
+margin: auto;
+}
+
+/* Nav */
+.main-nav {
+display: flex;
 align-items: center;
-  }
+justify-content: space-between;
+height: 60px;
+padding: 20px 0;
+font-size: 13px;
+}
+
+.main-nav .logo {
+width: 110px;
+}
+
+.main-nav ul {
+display: flex;
+}
+
+.main-nav ul li {
+padding: 0 10px;
+}
+
+.main-nav ul li a {
+padding-bottom: 2px;
+}
+
+.main-nav ul li a:hover {
+border-bottom: 2px solid #262626;
+}
+
+.main-nav ul.main-menu {
+flex: 1;
+margin-left: 20px;
+}
+
+.menu-btn {
+cursor: pointer;
+position: absolute;
+top: 20px;
+right: 30px;
+z-index: 2;
+display: none;
+}
+
+.btn {
+cursor: pointer;
+display: inline-block;
+border: 0;
+font-weight: bold;
+padding: 10px 20px;
+background: #262626;
+color: #fff;
+font-size: 15px;;
+}
+
+.btn:hover {
+opacity: 0.9;
+}
+
+.dark {
+color: #fff;
+}
+
+.dark .btn {
+background: #f4f4f4;
+color: #333;
+}
+
+/* Showcase */
+.showcase {
+width: 100%;
+height: 400px;
+background: url('https://i.ibb.co/zGSDGCL/slide1.png') no-repeat center center/cover;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+justify-content: flex-end;
+padding-bottom: 50px;
+margin-bottom: 20px;
+}
+
+.showcase h2, .showcase p {
+margin-bottom: 10px;
+}
+
+.showcase .btn {
+margin-top: 20px;
+}
+
+/* Home cards */
+.home-cards {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-gap: 20px;
+margin-bottom: 40px;
+}
+
+.home-cards img {
+width: 100%;
+margin-bottom: 20px;
+}
+
+.home-cards h3 {
+margin-bottom: 5px;
+}
+
+.home-cards a {
+display: inline-block;
+padding-top: 10px;
+color: #0067b8;
+text-transform: uppercase;
+font-weight: bold;
+}
+
+.home-cards a:hover i {
+margin-left: 10px;
+}
+
+/* Xbox */
+.xbox {
+width: 100%;
+height: 350px;
+background: url('https://i.ibb.co/MS1X7Xy/xbox.jpg') no-repeat center center/cover;
+margin-bottom: 20px;
+}
+
+.xbox .content {
+width: 40%;
+padding: 50px 0 0 30px;
+}
+
+.xbox p, .carbon p {
+margin: 10px 0 20px;
+}
+
+/* Carbon */
+.carbon {
+width: 100%;
+height: 350px;
+background: url('https://i.ibb.co/kXHBqdx/xbox-3.jpg') no-repeat center center/cover;
+}
+
+.carbon .content {
+width: 55%;
+padding: 100px 0 0 30px;
+}
+
+/* Follow */
+.follow {
+display: flex;
+align-items: center;
+justify-content: flex-start;
+margin: 30px 0 30px;
+}
+
+.follow * {
+margin-right: 10px;
+}
+
+/* Links */
+.links {
+background: #f2f2f2;
+color: #616161;
+font-size: 12px;
+padding: 35px 0;
+}
+
+.links-inner {
+max-width: 1100px;
+margin: 0 auto;
+padding: 0 20px;
+display: grid;
+grid-template-columns: repeat(6, 1fr);
+grid-gap: 10px;
+align-items: flex-start;
+justify-content: center;
+}
+
+.links li {
+line-height: 2.8;
+}
+
+/* Footer */
+.footer {
+background: #f2f2f2;
+color: #616161;
+font-size: 12px;
+padding: 20px 0;
+}
+
+.footer-inner {
+max-width: 1100px;
+margin: 0 auto;
+padding: 0 20px 0 20px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.footer div {
+margin-bottom: 20px;
+display: flex;
+align-items: center;
+}
+
+.footer div i {
+margin-right: 10px;
+}
+
+.footer ul {
+display: flex;
+flex-wrap: wrap;
+}
+
+.footer li {
+margin-right: 30px;
+margin-bottom: 20px;
+}
+
+@media(max-width: 700px) {
+.menu-btn {
+display: block;
+}
+
+.menu-btn:hover {
+opacity: 0.5;
+}
+
+.main-nav ul.right-menu {
+margin-right: 50px;
+}
+
+.main-nav ul.main-menu {
+display: block;
+position: absolute;
+top:0;
+left: 0;
+background: #f2f2f2;
+width: 50%;
+height: 100%;
+border-right: #ccc 1px solid;
+opacity: 0.9;
+padding: 30px;
+transform: translateX(-500px);
+transition: transform 0.5s ease-in-out;
+}
+
+.main-nav ul.main-menu li {
+padding: 10px;
+border-bottom: #ccc solid 1px;
+font-size: 14px;
+}
+
+.main-nav ul.main-menu li:last-child {
+border-bottom: 0;
+}
+
+.main-nav ul.main-menu.show {
+transform: translateX(-20px);
+}
+
+.home-cards {
+grid-template-columns: repeat(2, 1fr);
+}
+
+.xbox .content p {
+display: none;
+}
+
+.xbox .content h2 {
+margin-bottom: 20px;
+}
+
+.carbon .content {
+width: 85%;
+}
+
+.links .links-inner {
+grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media(max-width: 500px) {
+.home-cards {
+grid-template-columns: 1fr;
+}
+
+.links .links-inner {
+grid-template-columns: 1fr;
+}
+
+.links .links-inner ul {
+margin-bottom: 20px;
+
+}
+}#nav{
+  background-color: #fc7b20e3 ;
+    color:#fff;
+}
       </style>
     </head>
 
     <body>
 
-    <nav>
-    <div class="nav-wrapper" id="nav">
-      <a href="https://instagram.com/ct_bp_?igshid=Yzg5MTU1MDY=" class="brand-logo center">CT BP FiGHT</a>
-      <ul class="left hide-on-med-and-down">
-        <li><a href="index.php">home</a></li>
-        <li><a href="professores.php">treinadores</a></li>
-        <li><a href="horarios.php">horários</a></li>
-        <li><a href="localizacao.php">localização</a></li>
-        <li><a href="cadastro.php">cadastrar</a></li>
+    <?php include "./includes/navbar.php"?> <!--Navbar-->
 
-      </ul>
-    </div>
-  </nav><br>
+    <?php include "./includes/whatsapp.php"?> <!--Whatsapp-->
 
-  <div class="carousel carousel-slider center" data-indicators="true">
-    <div class="carousel-fixed-item center">  
-    </div>
-    <a href="https://instagram.com/ct_bp_?igshid=Yzg5MTU1MDY=">
-    <div class="carousel-item red white-text" href="#one!">
-        <img src="img/carde2.jpg" width="500px" height="300px">
-      <h2>First Panel</h2>
-      <p class="white-text">This is your first panel</p>
-    </div>
-</a>
-  </div><br> 
-
-<h3><i>modalidades do CT</i></h3>
-
-  <section>
-  <div class="row">
-        <div class="col s12 m4">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/muaythai2.jpg">
-              <span class="card-title"></span>
-            </div>
-            <div class="card-content">
-              <p>MUAY THAI</p>
-            </div>
-            <div class="card-action">
-              <a href="professores.php">Saiba mais sobre nossos treinadores</a>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m4">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/boxe.jpg">
-              <span class="card-title"></span>
-            </div>
-            <div class="card-content">
-              <p>BOXE</p>
-            </div>
-            <div class="card-action">
-              <a href="professores.php">Saiba mais sobre nossos treinadores</a>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m4">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/jiujitsu2.jpg">
-              <span class="card-title"></span>
-            </div>
-            <div class="card-content">
-              <p>JIU JITSU</p>
-            </div>
-            <div class="card-action">
-              <a href="professores.php">Saiba mais sobre nossos treinadores</a>
-            </div>
-          </div>
-        </div>
-      </div>
-</section>
-
-<h3><i>planos de mensalidade</i></h3>
-
-<section id="mensalidade">
-  <div class="row" id="plano">
-        <div class="col s12 m4">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/planosct.jpg">
-              <span class="card-title"></span>
-            </div>
-            <div class="card-content">
-              <p>MENSAL</p>
-            </div>
-            <div class="card-action">
-              <a href="https://instagram.com/ct_bp_?igshid=Yzg5MTU1MDY=">Saiba mais sobre nosso CT</a>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m4">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/planosct.jpg">
-              <span class="card-title"></span>
-            </div>
-            <div class="card-content">
-              <p>MENSAL</p>
-            </div>
-            <div class="card-action">
-              <a href="https://instagram.com/ct_bp_?igshid=Yzg5MTU1MDY=">Saiba mais sobre nosso CT</a>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m4">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/planosct.jpg">
-              <span class="card-title"></span>
-            </div>
-            <div class="card-content">
-              <p>MENSAL</p>
-            </div>
-            <div class="card-action">
-              <a href="https://instagram.com/ct_bp_?igshid=Yzg5MTU1MDY=">Saiba mais sobre nosso CT</a>
-            </div>
-          </div>
-        </div>
   
-        
+  
+  
+  
 
-        
-      <br>
-</section>
 
-<h3><i>EVENTOS</i></h3>
-
-<section>
-  <div class="row">
-        <div class="col s12 m4">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/graduacao.jpg">
-              <span class="card-title"></span>
-            </div>
-            <div class="card-content">
-              <p>GRADUAÇÃO</p>
-              <p>É um teste fisico e tecnico</p>
-              <p>acontece de 3 em 3 meses</p>
-              <p>para comprovar a evolução dos alunos</p>
-            </div>
-            <div class="card-action">
-              <a href="https://instagram.com/ct_bp_?igshid=Yzg5MTU1MDY=">Saiba mais sobre nosso CT</a>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m4">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/seminario.jpg">
-              <span class="card-title"></span>
-            </div>
-            <div class="card-content">
-              <p>SEMINÁRIO</p>
-              <p>Acontece algumas vezes no ano</p>
-              <p>onde trazemos professores renomados</p>
-              <p>para transmitir seus conhecimentos</p>
-            </div>
-            <div class="card-action">
-              <a href="https://instagram.com/ct_bp_?igshid=Yzg5MTU1MDY=">Saiba mais sobre nosso CT</a>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m4">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/treinadorabell-2.jpg">
-              <span class="card-title"></span>
-            </div>
-            <div class="card-content">
-              <p>AULÃO</p>
-              <p>acontece mensalmente</p>
-              <p>É uma aula que reune todos os alunos do CT</p>
-              <p>podendo ser no proprio CT ou em outros locais</p>
-            </div>
-            <div class="card-action">
-              <a href="https://instagram.com/ct_bp_?igshid=Yzg5MTU1MDY=">Saiba mais sobre nosso CT</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <br>
-</section>
-
-      <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script>$('.carousel.carousel-slider').carousel({fullWidth: true});</script><br>
-
-      <main>
-      <footer class="page-footer">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">CT BP FIGHT</h5>
-                <p class="grey-text text-lighten-4"><i>mais informações</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">redes sociais</h5>
-                <div class="todosicon">
-                   <a class="ri-whatsapp-line icon" id="zap" href="https://wa.me/5585988719784" ></a>
-                   <a class="ri-instagram-line icon" id="insta" href="https://instagram.com/ct_bp_?igshid=Yzg5MTU1MDY="></a>
-                   <a class="ri-facebook-line icon" id="face" href="https://instagram.com/ct_bp_?igshid=Yzg5MTU1MDY="></a>
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" style="border-radius: 0.5%;">
+                <div class="carousel-item active">
+                    <a href="https://instagram.com/ct_bp_?igshid=Yzg5MTU1MDY="><img src="img/carde2.jpg" class="d-block w-100" alt="..."></a>
                 </div>
-              </div>
+            <button class="carousel-control-prev" style="background-color: rgba(0, 0, 0, 0.168);" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" style="background-color: rgba(0, 0, 0, 0.168);" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <br>
+
+
+<section class="container">
+            <h1 style="text-align: center; color:white;" id="eventos">Modalidades do CT</h1>
+            <br>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                </style>
+                <div class="col">
+                    <div class="card" id="card">
+                        <img src="img/muaythaicanva.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">MUAY THAI</h5>
+                            <a href="https://instagram.com/ct_bp_?igshid=Yzg5MTU1MDY="><button type="button" class="btn btn-warning">Saiba mais sobre nosso CT</button></a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col">
+                    <div class="card" id="card">
+                        <img src="img/boxecanva.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">BOXE</h5>
+                            <a href="https://instagram.com/ct_bp_?igshid=Yzg5MTU1MDY="><button type="button" class="btn btn-warning">Saiba mais sobre nosso CT</button></a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col">
+                    <div class="card"  id="card">
+                        <img src="img/jiujitsucanva.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">JIU JITSU</h5>
+                            <a href="https://instagram.com/ct_bp_?igshid=Yzg5MTU1MDY="><button type="button" class="btn btn-warning">Saiba mais sobre nosso CT</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                
             </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            <i class="material-icons">copyright</i>2023 todos os direitos reservados
-            <p> <a class="ri-github-line icon" id="git" href="https://github.com/Devdavilourenco"></a>Devdavilourenco 
-            desenvolvimento de sistemas web</p> 
+        </section>
+        <br>
+
+        <section class="container">
+            <h1 style="text-align: center;color:white;" id="eventos">Planos de Mensalidade</h1>
+            <br>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                </style>
+                <div class="col">
+                    <div class="card" id="card">
+                        <img src="img/planosct.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">MENSAL</h5>
+                            <a href="https://instagram.com/ct_bp_?igshid=Yzg5MTU1MDY="><button type="button" class="btn btn-warning">Saiba mais sobre nosso CT</button></a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col">
+                    <div class="card" id="card">
+                        <img src="img/planosct.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">TRIMESTRAL</h5>
+                            <a href="https://instagram.com/ct_bp_?igshid=Yzg5MTU1MDY="><button type="button" class="btn btn-warning">Saiba mais sobre nosso CT</button></a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col">
+                    <div class="card"  id="card">
+                        <img src="img/planosct.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">PAGAMENTO</h5>
+                            <a href="https://instagram.com/ct_bp_?igshid=Yzg5MTU1MDY="><button type="button" class="btn btn-warning">Saiba mais sobre nosso CT</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                
             </div>
-          </div>
-        </footer>
-</main>
+        </section>
+
+        <section class="container">
+            <h1 style="text-align: center;color:white;" id="eventos">Eventos</h1>
+            <br>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                </style>
+                <div class="col">
+                    <div class="card" id="card">
+                        <img src="img/graduacaocanva.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Graduação</h5>
+                            <a href="https://instagram.com/ct_bp_?igshid=Yzg5MTU1MDY="><button type="button" class="btn btn-warning">Saiba mais sobre nosso CT</button></a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col">
+                    <div class="card" id="card">
+                        <img src="img/seminariocanva.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Seminário</h5>
+                            <a href="https://instagram.com/ct_bp_?igshid=Yzg5MTU1MDY="><button type="button" class="btn btn-warning">Saiba mais sobre nosso CT</button></a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col">
+                    <div class="card"  id="card">
+                        <img src="img/aulaocanva.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Aulão</h5>
+                            <a href="https://instagram.com/ct_bp_?igshid=Yzg5MTU1MDY="><button type="button" class="btn btn-warning">Saiba mais sobre nosso CT</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </section>
+
+
+<br>
+
+
+
+
+<?php include "./includes/footer.php"?> <!--Footer-->
     </body>
   </html>
 
 
-        
+  

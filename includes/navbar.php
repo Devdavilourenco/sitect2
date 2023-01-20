@@ -10,7 +10,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" style="color:#fff;"aria-current="page" href="index.php#menu">Menu</a>
+              <a class="nav-link active" style="color:#fff;"aria-current="page" href="index.php#menu">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" style="color:#fff;" href="professores.php">Treinadores</a>
@@ -22,13 +22,14 @@
               <a class="nav-link" style="color:#fff;" href="index.php#localizacao">Localização</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" style="color:#fff;" href="cadastro.php">Cadastrar</a>
+              <a class="nav-link" style="color:#fff;" href="index.php#contato">Contato</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" style="color:#fff;" href="index.php#contato">Contato</a>
+              <a class="nav-link" style="color:#fff;" href="cadastro.php">Cadastrar</a>
             </li>
           </ul>
   
         </div>
       </div>
     </nav>
+   

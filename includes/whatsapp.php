@@ -11,10 +11,10 @@
                         Olá
                     </div>
                     <div class="whatswidget-conversation-cta" style="all:revert;"> 
-                        <a style="all:revert;" id="whatswidget-phone-desktop" target="_blank" href="https://api.whatsapp.com/send?phone=5585988719784&text=Olá" class="whatswidget-cta whatswidget-cta-desktop">
+                        <a style="all:revert;" id="whatswidget-phone-desktop" target="_blank" href="https://api.whatsapp.com/send?phone=5585986619574&text=Olá" class="whatswidget-cta whatswidget-cta-desktop">
                             Enviar Mensagem
                         </a>
-                        <a id="whatswidget-phone-mobile" target="_blank" href="https://api.whatsapp.com/send?phone=5585988719784&text=Olá!" class="whatswidget-cta whatswidget-cta-mobile" style="all:revert;">
+                        <a id="whatswidget-phone-mobile" target="_blank" href="https://api.whatsapp.com/send?phone=5585986619574&text=Olá!" class="whatswidget-cta whatswidget-cta-mobile" style="all:revert;">
                             Enviar Mensagem
                         </a>
                     </div>
